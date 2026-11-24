@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ร้านหนังสือ อ.วัฒนา</title>
+<meta name="description" content="ระบบจัดการร้านหนังสือ อ.วัฒนา">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ร้านหนังสือ อ.วัฒนา">
+<meta property="og:title" content="ร้านหนังสือ อ.วัฒนา">
+<meta property="og:description" content="ระบบจัดการร้านหนังสือ อ.วัฒนา">
+<meta property="og:url" content="https://owattana.github.io/shop/">
+<meta property="og:image" content="https://owattana.github.io/order/logo.png">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="400">
+<meta name="theme-color" content="#5c6f3c">
+<link rel="icon" href="https://owattana.github.io/order/logo.png">
+<link rel="apple-touch-icon" href="https://owattana.github.io/order/logo.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #f6f5ef; overflow: hidden; }
+  @media (prefers-color-scheme: dark) { html, body { background: #141511; } }
+  #app { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+  noscript a { display: block; padding: 40px 16px; text-align: center; font: 18px sans-serif; color: #5c6f3c; }
+</style>
+</head>
+<body>
+<!-- ระบบจริงอยู่ที่ Google Apps Script · หน้านี้แค่เปิดระบบไว้ข้างใน เพื่อไม่ให้มีแถบเตือนของ Google -->
+<iframe id="app" title="ร้านหนังสือ อ.วัฒนา" allow="camera; microphone; geolocation; clipboard-read; clipboard-write; fullscreen; web-share" allowfullscreen></iframe>
+<noscript><a href="https://script.google.com/macros/s/AKfycbyRZud_oLzofhFdF4ik5w57EGjLry-vWZyM1CPYOhH_sOe-LfzhYz5rGljybj-if9Ei/exec">แตะที่นี่เพื่อเปิดระบบ</a></noscript>
+<script>
+  var EXEC = 'https://script.google.com/macros/s/AKfycbyRZud_oLzofhFdF4ik5w57EGjLry-vWZyM1CPYOhH_sOe-LfzhYz5rGljybj-if9Ei/exec';
+  var FORCE = {};   // ค่าที่ต้องใส่เสมอ
+  var DEFAULT = {}; // ค่าเริ่มต้น (ถ้าลิงก์ไม่ได้ส่งมา)
+  var p = new URLSearchParams(location.search);
+  for (var k in DEFAULT) if (!p.has(k)) p.set(k, DEFAULT[k]);
+  for (var k2 in FORCE) p.set(k2, FORCE[k2]);
+  var q = p.toString();
+  document.getElementById('app').src = EXEC + (q ? '?' + q : '');
+</script>
+</body>
+</html>
